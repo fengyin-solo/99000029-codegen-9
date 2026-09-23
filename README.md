@@ -101,7 +101,9 @@ The frontend will be available at `http://localhost:5173`
 ## Features
 
 - **Article Management**: Create, read, update, and delete blog articles
-- **Markdown Support**: Write articles in Markdown with live preview
+- **Markdown Support**: Write articles in Markdown with live preview that updates as you type
+- **Draft Auto-Save & Recovery**: The editor auto-saves title, summary, tags and body to a local draft while editing; drafts survive crashes and accidental exits, are offered for recovery when re-entering the editor, and newer drafts are never overwritten by stale ones
+- **Offline Resilience**: Clear error feedback with a retry entry when saving fails (e.g. network loss); content is kept safe in the local draft until the save succeeds
 - **Tag System**: Organize articles with tags and filter by tags
 - **Pagination**: Navigate through articles with pagination (10 per page)
 - **Admin Panel**: Protected admin area for managing articles
